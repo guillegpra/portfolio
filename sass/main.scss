@@ -1,0 +1,273 @@
+$primary: #000;
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+* {
+    font-family: "Montserrat", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: AppleMyungjo;
+    src: url(/fonts/applemyungjo-regular.ttf);
+}
+
+/* --------------- Navbar --------------- */
+.navbar {
+    margin: 0;
+    padding: 0px 0px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+}
+
+.navbar .navbar-brand {
+    padding: 8px 8px;
+}
+
+/* Toggler */
+.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler {
+    border-radius: 0%;
+    border-left: 1px solid #000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Items */
+.navbar .nav-item {
+    border-left: 1px solid #000;
+    padding: 8px 0px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    color: gray !important;
+    font-weight: 600 !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .navbar .nav-item {
+        padding-left: 5px;
+        border-left: none;
+        border-top: 1px solid #000;
+    }
+}
+
+/* --------------- Home --------------- */
+.home {
+    margin: 0;
+    padding: 0;
+}
+
+.first-row {
+    margin: 0;
+    padding: 0;
+}
+
+.first-row .name {
+    margin-top: 37.5%;
+    font-family: "Archivo", 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 180px;
+    font-weight: 600;
+    letter-spacing: -10px;
+    line-height: 82%;
+}
+
+.first-row .name span {
+    font-family: AppleMyungjo, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.first-row .img {
+    margin-top: 10px;
+    margin-left: 18%;
+    padding: 15px;
+    position: relative;
+    z-index: -10;
+}
+
+.second-row {
+    margin-top: -14%;
+    margin-left: 15%;
+    margin-right: 0;
+    padding: 0;
+}
+
+.second-row .text {
+    margin-top: 30%;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: -0.9px;
+    line-height: 99%;
+}
+
+.second-row .text a {
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.second-row .text a:hover {
+    text-decoration: underline;
+    letter-spacing: normal;
+}
+
+.second-row .img {
+    margin-top: 0;
+    margin-right: 7.5%;
+    padding-bottom: 15px;
+    z-index: -5;
+}
+
+/* --------------- Home --------------- */
+.contact-list a {
+    font-family: "Archivo", 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 110px;
+    font-weight: bold;
+    letter-spacing: -3.5px;
+    line-height: 97%;
+    text-decoration: none;
+
+    @media (max-width: 1200px) {
+        font-size: 90px;
+    }
+
+    @media (max-width: 988px) {
+        font-size: 75px;
+    }
+
+    @media (max-width: 714px) {
+        font-size: 60px;
+    }
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+.contact-list a span {
+    font-family: AppleMyungjo, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: -4px;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+    @media (max-width: 559px) {
+        font-size: 45.5px;
+    }
+}
+
+.contact-list .numbers {
+    letter-spacing: -15px;
+
+    @media (max-width: 714px) {
+        letter-spacing: -10px;
+    }
+
+    @media (max-width: 559px) {
+        letter-spacing: -7px;;
+    }
+}
+
+/* --------------- Photography --------------- */
+.photography h1 {
+    font-family: "Archivo", 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 160px;
+    font-weight: bold;
+    letter-spacing: -8px;
+    text-align: right;
+}
+
+.photography h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 160px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.photography .row.img-row {
+    margin: 0;
+    padding: 0;
+}
+
+.photography .row.img-row.title {
+    margin-top: -55px;
+    position: relative;
+    z-index: -10;
+}
+
+.photography .rotate p {
+    letter-spacing: -0.7px;
+    text-align: right; /* Align the text to the right */
+    writing-mode: vertical-lr; /* Set vertical text orientation */
+    transform: rotate(180deg); /* Rotate text 180 degrees to make it read from bottom to top */
+    margin: 0; /* Remove any default margin */
+}
+
+.photography .col-11 {
+    padding: 0;
+    margin: 0;
+}
+
+.photography .trips-row {
+    margin-bottom: 20px;
+}
+
+.photography .row.img-row.third {
+    margin-top: 140px;
+}
+
+.photography .home-row p {
+    letter-spacing: -0.7px;
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.photography .home-row .col-md.title {
+    margin-top: -150px;
+}
+
+.photography .home-row .col-md .img-fluid.title {
+    margin-top: -55px;
+    position: relative;
+    z-index: -10;
+}
+
+.photography .food-row .col-md.title {
+    margin-top: -150px;
+}
+
+.photography .see-more a {
+    font-family: "Archivo", 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: -7px;
+    transition: all 0.3s ease;
+}
+
+.photography .see-more a:hover {
+    letter-spacing: normal;
+}
