@@ -23,6 +23,10 @@ $primary: #000;
 
 .navbar .navbar-brand {
     padding: 8px 8px;
+
+    @media (max-width: 400px) {
+        font-size: 18px;
+    }
 }
 
 /* Toggler */
@@ -193,6 +197,21 @@ $primary: #000;
     font-weight: bold;
     letter-spacing: -8px;
     text-align: right;
+
+    @media (max-width: 1200px) {
+        font-size: 105px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 80px;
+    }
+
+    @media (max-width: 570px) {
+        font-size: 55px;
+        letter-spacing: -5px;;
+    }
 }
 
 .photography h3 {
@@ -205,6 +224,19 @@ $primary: #000;
     margin-bottom: 0;
     position: relative;
     z-index: 0;
+
+    @media (max-width: 1200px) {
+        font-size: 105px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 570px) {
+        font-size: 50px;
+        letter-spacing: -5px;
+    }
 }
 
 .photography .row.img-row {
@@ -216,6 +248,16 @@ $primary: #000;
     margin-top: -55px;
     position: relative;
     z-index: -10;
+
+    @media (max-width: 992px) {
+        margin-top: 12px;
+    }
+}
+
+.photography .row img {
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
 .photography .rotate p {
@@ -224,9 +266,14 @@ $primary: #000;
     writing-mode: vertical-lr; /* Set vertical text orientation */
     transform: rotate(180deg); /* Rotate text 180 degrees to make it read from bottom to top */
     margin: 0; /* Remove any default margin */
+
+    @media (max-width: 992px) {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
 }
 
-.photography .col-11 {
+.photography .col-lg-11 {
     padding: 0;
     margin: 0;
 }
@@ -237,6 +284,14 @@ $primary: #000;
 
 .photography .row.img-row.third {
     margin-top: 140px;
+
+    @media (max-width: 992px) {
+        margin-top: 155px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .photography .home-row p {
@@ -248,12 +303,24 @@ $primary: #000;
 
 .photography .home-row .col-md.title {
     margin-top: -150px;
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .photography .home-row .col-md .img-fluid.title {
     margin-top: -55px;
     position: relative;
     z-index: -10;
+
+    @media (max-width: 992px) {
+        margin-top: -12px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .photography .food-row .col-md.title {
@@ -266,6 +333,15 @@ $primary: #000;
     font-weight: bold;
     letter-spacing: -7px;
     transition: all 0.3s ease;
+
+    @media (max-width: 1200px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 60px;
+        letter-spacing: -4px;
+    }
 }
 
 .photography .see-more a:hover {

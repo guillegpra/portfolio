@@ -11991,6 +11991,11 @@ textarea.form-control-lg {
 .navbar .navbar-brand {
   padding: 8px 8px;
 }
+@media (max-width: 400px) {
+  .navbar .navbar-brand {
+    font-size: 18px;
+  }
+}
 
 /* Toggler */
 .navbar-toggler {
@@ -12167,6 +12172,24 @@ textarea.form-control-lg {
   letter-spacing: -8px;
   text-align: right;
 }
+@media (max-width: 1200px) {
+  .photography h1, .photography .h1 {
+    font-size: 105px;
+  }
+}
+@media (max-width: 768px) {
+  .photography h1, .photography .h1 {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 80px;
+  }
+}
+@media (max-width: 570px) {
+  .photography h1, .photography .h1 {
+    font-size: 55px;
+    letter-spacing: -5px;
+  }
+}
 
 .photography h3, .photography .h3 {
   font-family: "Times New Roman", Times, serif;
@@ -12179,6 +12202,22 @@ textarea.form-control-lg {
   position: relative;
   z-index: 0;
 }
+@media (max-width: 1200px) {
+  .photography h3, .photography .h3 {
+    font-size: 105px;
+  }
+}
+@media (max-width: 768px) {
+  .photography h3, .photography .h3 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 570px) {
+  .photography h3, .photography .h3 {
+    font-size: 50px;
+    letter-spacing: -5px;
+  }
+}
 
 .photography .row.img-row {
   margin: 0;
@@ -12190,6 +12229,17 @@ textarea.form-control-lg {
   position: relative;
   z-index: -10;
 }
+@media (max-width: 992px) {
+  .photography .row.img-row.title {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .photography .row img {
+    margin-bottom: 20px;
+  }
+}
 
 .photography .rotate p {
   letter-spacing: -0.7px;
@@ -12198,8 +12248,14 @@ textarea.form-control-lg {
   transform: rotate(180deg); /* Rotate text 180 degrees to make it read from bottom to top */
   margin: 0; /* Remove any default margin */
 }
+@media (max-width: 992px) {
+  .photography .rotate p {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+}
 
-.photography .col-11 {
+.photography .col-lg-11 {
   padding: 0;
   margin: 0;
 }
@@ -12210,6 +12266,16 @@ textarea.form-control-lg {
 
 .photography .row.img-row.third {
   margin-top: 140px;
+}
+@media (max-width: 992px) {
+  .photography .row.img-row.third {
+    margin-top: 155px;
+  }
+}
+@media (max-width: 768px) {
+  .photography .row.img-row.third {
+    margin-top: 0;
+  }
 }
 
 .photography .home-row p {
@@ -12222,11 +12288,26 @@ textarea.form-control-lg {
 .photography .home-row .col-md.title {
   margin-top: -150px;
 }
+@media (max-width: 768px) {
+  .photography .home-row .col-md.title {
+    margin-top: 0;
+  }
+}
 
 .photography .home-row .col-md .img-fluid.title {
   margin-top: -55px;
   position: relative;
   z-index: -10;
+}
+@media (max-width: 992px) {
+  .photography .home-row .col-md .img-fluid.title {
+    margin-top: -12px;
+  }
+}
+@media (max-width: 768px) {
+  .photography .home-row .col-md .img-fluid.title {
+    margin-top: 0;
+  }
 }
 
 .photography .food-row .col-md.title {
@@ -12239,6 +12320,17 @@ textarea.form-control-lg {
   font-weight: bold;
   letter-spacing: -7px;
   transition: all 0.3s ease;
+}
+@media (max-width: 1200px) {
+  .photography .see-more a {
+    font-size: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .photography .see-more a {
+    font-size: 60px;
+    letter-spacing: -4px;
+  }
 }
 
 .photography .see-more a:hover {
