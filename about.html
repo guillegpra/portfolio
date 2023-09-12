@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
     <link href="css/main.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/about.js"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-md">       
+    <nav class="navbar navbar-expand-md">
         <a href="index.html" class="navbar-brand text-primary text-uppercase">
             Guillermo García Pradales
         </a>
@@ -33,6 +40,173 @@
         </div>
     </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="about container-fluid">
+        <h1 class="text-uppercase">About &nbsp;Me</h1>
+
+        <div class="experience">
+            <h3 class="mx-4">Education & experience</h3>
+
+            <div class="timeline">
+                <ol>
+                    <li>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-event">
+                            <h4>Event 1</h4>
+                            <p>Event description goes here.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-event">
+                            <h4>Event 2</h4>
+                            <p>Event description goes here.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-event">
+                            <h4>Event 3</h4>
+                            <p>Event description goes here.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-event">
+                            <h4>Event 4</h4>
+                            <p>Event description goes here.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-line"></div>
+                        <div class="timeline-event">
+                            <h4>Event 5</h4>
+                            <p>Event description goes here.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="projects">
+            <h3 class="mx-4">Projects</h3>
+
+            <div class="row mx-5">
+                <div class="col-md">
+                    <a href="https://www.ciao-lang.org/playground">
+                        <img class="img-fluid mb-2" src="imgs/ciao-playground.png" alt="Ciao language logo">
+                    </a>
+                    <div class="text-uppercase">
+                        <a href="https://www.ciao-lang.org/playground">
+                            <h4>Ciao Prolog Playground</h4>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi nihil aut rem quos
+                            laboriosam tempore officia voluptatem illo quas?</p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <a href="https://www.ciao-lang.org/playground">
+                        <img class="img-fluid mb-2" src="imgs/ciao-playground.png" alt="Ciao language logo">
+                    </a>
+                    <div class="text-uppercase">
+                        <a href="https://www.ciao-lang.org/playground">
+                            <h4>BookARtify</h4>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi nihil aut rem quos
+                            laboriosam tempore officia voluptatem illo quas?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="projects row mx-5 mt-5">
+                <div class="col-md">
+                    <a href="https://www.ciao-lang.org/playground">
+                        <img class="img-fluid mb-2" src="imgs/ciao-playground.png" alt="Ciao language logo">
+                    </a>
+                    <div class="text-uppercase">
+                        <a href="https://www.ciao-lang.org/playground">
+                            <h4>Pong Game</h4>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi nihil aut rem quos
+                            laboriosam tempore officia voluptatem illo quas?</p>
+                    </div>
+                </div>
+                <div class="col-md"></div>
+            </div>
+
+        </div>
+
+        <div class="see-more text-uppercase my-3">
+            See more on <a class="github-link" href="https://github.com/guillegpra">GitHub</a> or...<br>
+            <a href="contact.html">Hire me &rarr;</a>
+        </div>
+
+        <!-- <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="imgs/belfast.JPG" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/profile.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/belfast.JPG" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/profile.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/belfast.JPG" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> -->
+    </div>
 </body>
+
 </html>
